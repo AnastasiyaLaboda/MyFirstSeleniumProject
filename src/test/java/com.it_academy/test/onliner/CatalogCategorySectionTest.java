@@ -12,12 +12,13 @@ import static com.it_academy.onliner.constants.Constant.Urls.ONLINER_BY_HOME_PAG
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class CatalogCategorySectionTest extends BaseTest {
-    private final HomePage homePage = new HomePage();
+    private HomePage homePage;
     private static final String MAIN_SECTION_TITLE = "Каталог";
     private static final String CATALOG_CATEGORY = "Компьютеры";
 
     @BeforeClass
     public void navigationToHomePage() {
+        homePage = new HomePage();
         homePage.open(ONLINER_BY_HOME_PAGE);
     }
 

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="">
+    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="Onliner POM and tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -37,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/anduser/IdeaProjects/FirstSeleniumProject",
+    "last_opened_file_path": "C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -45,15 +55,18 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\test\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\test\resources" />
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.com.it_academy.test.onliner">
-    <configuration name="C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/suite.xml">
+    <configuration name="C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -78,6 +91,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainSectionsOnHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.MainSectionsOnHomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.ProductDetailsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
       <extension name="coverage">
@@ -95,47 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductGroupTest.isInEachProductGroupNumberOfProductsAndMinPriceValid" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.ProductGroupTest" />
-      <option name="METHOD_NAME" value="isInEachProductGroupNumberOfProductsAndMinPriceValid" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.it_academy.test.onliner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.com.it_academy.test.onliner" />
-        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.CatalogCategorySectionTest" />
-        <item itemvalue="TestNG.ProductGroupTest.isInEachProductGroupNumberOfProductsAndMinPriceValid" />
+        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/suite.xml" />
         <item itemvalue="TestNG.ProductGroupTest" />
+        <item itemvalue="TestNG.ProductDetailsTest" />
+        <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
+        <item itemvalue="TestNG.CatalogCategorySectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +161,14 @@
       <option name="presentableId" value="Default" />
       <updated>1681720946023</updated>
     </task>
+    <task id="LOCAL-00001" summary="Onliner POM and tests added">
+      <created>1682281512535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682281512536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,5 +181,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Onliner POM and tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Onliner POM and tests added" />
   </component>
 </project>

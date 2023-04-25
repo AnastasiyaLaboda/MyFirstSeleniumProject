@@ -15,7 +15,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ProductDetailsTest extends BaseTest {
 
-    private final HomePage homePage = new HomePage();
+    private HomePage homePage;
 
     private static final String MAIN_SECTION_TITLE = "Каталог";
     private static final String CATALOG_CATEGORY = "Электроника";
@@ -25,6 +25,7 @@ public class ProductDetailsTest extends BaseTest {
 
     @BeforeClass
     public void navigationToHomePage() {
+        homePage = new HomePage();
         homePage.open(ONLINER_BY_HOME_PAGE);
         homePage
                 .clickOnMainNavigationLink(MAIN_SECTION_TITLE)
