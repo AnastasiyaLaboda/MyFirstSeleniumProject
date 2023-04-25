@@ -20,14 +20,14 @@ public class DriverManager {
         driver.get().manage().timeouts().pageLoadTimeout(IMPLICIT_WAIT, TimeUnit.SECONDS);
     }
 
-    public static WebDriver getWebDriver() {
+    public synchronized static WebDriver getWebDriver() {
         if (driver.get() == null) {
             setWebDriver();
         }
         return driver.get();
     }
 
-    public static void closeBrowser() {
+    public synchronized static void closeBrowser() {
         driver.get().close();
         driver.remove();
     }

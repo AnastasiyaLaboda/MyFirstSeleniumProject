@@ -10,10 +10,11 @@ import static com.it_academy.onliner.constants.Constant.Urls.ONLINER_BY_HOME_PAG
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 public class MainSectionsOnHomePageTest extends BaseTest {
-    private final HomePage homePage = new HomePage();
+    private HomePage homePage;
 
     @BeforeClass
     public void navigationToHomePage() {
+        homePage = new HomePage();
         homePage.open(ONLINER_BY_HOME_PAGE);
     }
 
