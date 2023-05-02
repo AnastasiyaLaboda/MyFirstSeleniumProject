@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="Onliner POM and tests added">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/WaitTimeouts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/CatalogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +50,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anduser/IdeaProjects/MyApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\test\resources" />
@@ -62,63 +70,15 @@
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\test\resources" />
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.it_academy.test.onliner" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/suite.xml">
-    <configuration name="C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/suite.xml">
+    <configuration name="C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CatalogCategorySectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.CatalogCategorySectionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainSectionsOnHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.MainSectionsOnHomePageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.ProductDetailsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -142,13 +102,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductGroupTest.verifyEachProductGroupContains_Valid_NumberOfProductsAndMinPrice" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.ProductGroupTest" />
+      <option name="METHOD_NAME" value="verifyEachProductGroupContains_Valid_NumberOfProductsAndMinPrice" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchFormInMainSectionsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.SearchFormInMainSectionsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchableSectionsInFrameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.SearchableSectionsInFrameTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/MyFirstSeleniumProject/src/test/resources/suite.xml" />
+        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/suite.xml" />
         <item itemvalue="TestNG.ProductGroupTest" />
-        <item itemvalue="TestNG.ProductDetailsTest" />
-        <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
-        <item itemvalue="TestNG.CatalogCategorySectionTest" />
+        <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
+        <item itemvalue="TestNG.SearchFormInMainSectionsTest" />
+        <item itemvalue="TestNG.ProductGroupTest.verifyEachProductGroupContains_Valid_NumberOfProductsAndMinPrice" />
       </list>
     </recent_temporary>
   </component>

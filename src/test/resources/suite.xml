@@ -4,8 +4,12 @@
         <classes>
             <class name="com.it_academy.test.onliner.MainSectionsOnHomePageTest"/>
             <class name="com.it_academy.test.onliner.CatalogCategorySectionTest"/>
+            <class name="com.it_academy.test.onliner.CatalogCategoryAsideTitlesTest"/>
             <class name="com.it_academy.test.onliner.ProductGroupTest"/>
             <class name="com.it_academy.test.onliner.ProductDetailsTest"/>
+            <class name="com.it_academy.test.onliner.SearchableSectionsInFrameTest"/>
+            <class name="com.it_academy.test.onliner.SearchFormInMainSectionsTest"/>
+            <class name="com.it_academy.test.onliner.SearchFrameExitTest"/>
         </classes>
     </test>
 </suite>

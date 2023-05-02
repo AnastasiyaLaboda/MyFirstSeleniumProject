@@ -1,59 +1,44 @@
 package com.it_academy.onliner.pageobject.onliner;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.it_academy.onliner.pageobject.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static java.lang.String.format;
+import static com.codeborne.selenide.CollectionCondition.anyMatch;
+import static com.codeborne.selenide.Selenide.*;
+import static com.it_academy.onliner.constants.WaitTimeouts.EXPLICIT_WAIT;
+import static java.time.Duration.ofSeconds;
 
 public class ProductPage extends BasePage {
-
     private final By productLink = By.xpath("//div[@class='schema-product__group']");
-    private static final String PRODUCT_TITLE_LINK_XPATH_PATTERN =
-            "//div[@class='schema-product__group'][%d]//span[contains(@data-bind, 'product.full_name')]";
 
-    private static final String PRODUCT_DESCRIPTION_LINK_XPATH_PATTERN =
-            "//div[@class='schema-product__group'][%d]//span[contains(@data-bind, 'product.description')]";
-    private static final String PRODUCT_RATING_LINK_XPATH_PATTERN =
-            "//div[@class='schema-product__group'][%d]//span[contains(@class, 'rating__fill')]";
-    private static final String PRODUCT_PRICE_LINK_XPATH_PATTERN =
-            "//div[@class='schema-product__group'][%d]//span[contains(@data-bind, 'prices')]";
+    public enum ProductDetails {
+        TITLE(By.xpath("//div[@class='schema-product__group']//span[contains(@data-bind, 'product.full_name')]")),
+        DESCRIPTION(By.xpath("//div[@class='schema-product__group']//span[contains(@data-bind, 'product.description')]")),
+        RATING(By.xpath("//div[@class='schema-product__group']//span[contains(@class, 'rating__fill')]")),
+        PRICE(By.xpath("//div[@class='schema-product__group']//span[contains(@data-bind, 'prices')]")),
+        IMAGINE(By.xpath("//div[@class='schema-product__group']//*[contains(@class, 'image-link')]")),
+        CHECKBOX(By.xpath("//div[@class='schema-product__group']//label[contains(@class, 'control')]"));
+        private By productDetailBy;
 
-    private static final String PRODUCT_IMG_LINK_XPATH_PATTERN =
-            "//div[@class='schema-product__group'][%d]//*[contains(@class, 'image-link')]";
+        public By getProductDetailBy() {
+            return productDetailBy;
+        }
 
-    private static final String PRODUCT_CHECKBOX_LINK_XPATH_PATTERN =
-            "//div[@class='schema-product__group'][%d]//label[contains(@class, 'control')]";
-
-    public List<WebElement> getProductList() {
-        List<WebElement> productList = waitForExpectedElements(productLink);
-        return new ArrayList<>(productList);
+        ProductDetails(By by) {
+            this.productDetailBy = by;
+        }
     }
 
-    public boolean isProductTitleDisplayed(int item) {
-        return isElementDisplayed(By.xpath(format(PRODUCT_TITLE_LINK_XPATH_PATTERN, item)));
+    public ElementsCollection getProductsList() {
+        return $$(productLink)
+                .should(anyMatch("Verify that each element is visible",
+                        element -> element.isDisplayed()), ofSeconds(EXPLICIT_WAIT));
     }
 
-    public boolean isProductDescriptionDisplayed(int item) {
-        return isElementDisplayed(By.xpath(format(PRODUCT_DESCRIPTION_LINK_XPATH_PATTERN, item)));
-    }
-
-    public boolean isProductRatingDisplayed(int item) {
-        return isElementDisplayed(By.xpath(format(PRODUCT_RATING_LINK_XPATH_PATTERN, item)));
-    }
-
-    public boolean isProductPriceDisplayed(int item) {
-        return isElementDisplayed(By.xpath(format(PRODUCT_PRICE_LINK_XPATH_PATTERN, item)));
-    }
-
-    public boolean isProductImageDisplayed(int item) {
-        return isElementDisplayed(By.xpath(format(PRODUCT_IMG_LINK_XPATH_PATTERN, item)));
-    }
-
-    public boolean isProductCheckboxDisplayed(int item) {
-        return isElementDisplayed(By.xpath(format(PRODUCT_CHECKBOX_LINK_XPATH_PATTERN, item)));
+    public ElementsCollection getProductsDetailsList(ProductDetails productDetail) {
+        return $$(productDetail.getProductDetailBy())
+                .should(anyMatch("Verify that each element is visible",
+                        element -> element.isDisplayed()), ofSeconds(EXPLICIT_WAIT));
     }
 }
