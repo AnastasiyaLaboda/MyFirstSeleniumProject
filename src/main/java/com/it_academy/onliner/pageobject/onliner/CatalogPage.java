@@ -2,6 +2,7 @@ package com.it_academy.onliner.pageobject.onliner;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.it_academy.onliner.pageobject.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.CollectionCondition.anyMatch;
@@ -21,11 +22,11 @@ public class CatalogPage extends BasePage {
     private static final String PRODUCT_GROUP_XPATH_PATTERN =
             "//div[contains(@class, 'aside-item_active')]//div[contains(@class, 'dropdown-list')]/a[contains(@href, 'onliner')]"
                     + "//span[contains(@class, 'title') and contains(text(), '%s')]";
-    private static final By productGroups =
+    private final By productGroups =
             By.xpath("//div[contains(@class, 'aside-item_active')]//div[contains(@class, 'dropdown-list')]/a[contains(@href, 'onliner')]");
-    private static final By catalogCategorySectionClassifiers =
+    private final By catalogCategorySectionClassifiers =
             By.xpath("//div[contains(@class, 'aside-list')]//div[contains(@class, 'aside-title')]");
-    private static final By catalogCategorySections =
+    private final By catalogCategorySections =
             By.xpath("//ul[@class='catalog-navigation-classifier ']/li//span[normalize-space(text())]");
 
     public enum ProductGroupValues {
@@ -43,6 +44,7 @@ public class CatalogPage extends BasePage {
         }
     }
 
+    @Step("In Catalog category click on section {link}")
     public CatalogPage clickOnCatalogCategorySectionLink(String link) {
         $x(format(CATALOG_CATEGORY_SECTION_LINK_XPATH_PATTERN, link))
                 .shouldBe(visible, ofSeconds(EXPLICIT_WAIT))
@@ -50,18 +52,21 @@ public class CatalogPage extends BasePage {
         return this;
     }
 
+    @Step("Get all catalog category sections")
     public ElementsCollection getCatalogCategorySections() {
         return $$(catalogCategorySections)
                 .should(anyMatch("Verify that each element is visible",
                         element -> element.isDisplayed()), ofSeconds(EXPLICIT_WAIT));
     }
 
+    @Step("Get catalog category section aside titles")
     public ElementsCollection getCatalogCategorySectionAsideTitles() {
         return $$(catalogCategorySectionClassifiers)
                 .should(anyMatch("Verify that each element is visible",
                         element -> element.isDisplayed()), ofSeconds(EXPLICIT_WAIT));
     }
 
+    @Step("In catalog category section click on classifier {link}")
     public CatalogPage clickOnCatalogCategorySectionClassifierLink(String link) {
         $x(format(CATALOG_CATEGORY_SECTION_CLASSIFIER_LINK_XPATH_PATTERN, link))
                 .shouldBe(and("clickable", visible, enabled), ofSeconds(EXPLICIT_WAIT))
@@ -69,12 +74,14 @@ public class CatalogPage extends BasePage {
         return this;
     }
 
+    @Step("Get product groups {groupValue}")
     public ElementsCollection getProductGroupsValues(ProductGroupValues groupValue) {
         return $$x(ProductGroupValues.valueOf(valueOf(groupValue)).getXPath())
                 .should(anyMatch("Verify that each element is visible",
                         element -> element.isDisplayed()), ofSeconds(EXPLICIT_WAIT));
     }
 
+    @Step("Click on product group {productGroup}")
     public ProductPage clickOnProductGroupLink(String productGroup) {
         $x(format(PRODUCT_GROUP_XPATH_PATTERN, productGroup))
                 .shouldBe(visible, ofSeconds(EXPLICIT_WAIT))
@@ -82,6 +89,7 @@ public class CatalogPage extends BasePage {
         return new ProductPage();
     }
 
+    @Step("Get product groups")
     public ElementsCollection getProductGroups() {
         return $$(productGroups)
                 .should(anyMatch("Verify that each element is visible",
