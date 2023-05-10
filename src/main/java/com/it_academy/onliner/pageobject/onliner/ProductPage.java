@@ -2,6 +2,7 @@ package com.it_academy.onliner.pageobject.onliner;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.it_academy.onliner.pageobject.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.CollectionCondition.anyMatch;
@@ -30,12 +31,14 @@ public class ProductPage extends BasePage {
         }
     }
 
+    @Step("Get products")
     public ElementsCollection getProductsList() {
         return $$(productLink)
                 .should(anyMatch("Verify that each element is visible",
                         element -> element.isDisplayed()), ofSeconds(EXPLICIT_WAIT));
     }
 
+    @Step("Get products {productDetail}")
     public ElementsCollection getProductsDetailsList(ProductDetails productDetail) {
         return $$(productDetail.getProductDetailBy())
                 .should(anyMatch("Verify that each element is visible",
