@@ -4,25 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="Onliner POM and tests added">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/categories.json" afterDir="false" />
+    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="code refactoring, allure reporting added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/BrowserOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/BrowserOptionsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/PropertiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/RemoteDriverCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/rest_api/endpoints/OnlinerEndpoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/rest_api/entity/SushiveslaProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/rest_api/service/SushiveslaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/rest_api/utils/GetRequestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sesources/endpoints.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/api/OnlinerCatalogSushiveslaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/selenium-server-4.9.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2023_15_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2023_15_05__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/CatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/pageobject/onliner/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategoryAsideTitlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategoryAsideTitlesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchFormInMainSectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchFormInMainSectionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchFrameExitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchFrameExitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchableSectionsInFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchableSectionsInFrameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/ChromeDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/ChromeDriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/EdgeDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/EdgeDriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/FirefoxDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/FirefoxDriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/WebDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/WebDriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategoryAsideTitlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategoryAsideTitlesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/CatalogCategorySectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategorySectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/DataProviderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/DataProviderClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/MainSectionsOnHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/MainSectionsOnHomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/ProductDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/ProductGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/ProductGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchFormInMainSectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchFormInMainSectionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchFrameExitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchFrameExitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.it_academy/test/onliner/SearchableSectionsInFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchableSectionsInFrameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +77,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -78,8 +93,8 @@
       <recent name="com.it_academy.test.onliner" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.MyFirstSeleniumProject [clean]">
-    <configuration name="MyFirstSeleniumProject [clean]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ProductDetailsTest">
+    <configuration name="MyFirstSeleniumProject [clean...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -91,6 +106,8 @@
             <option name="goals">
               <list>
                 <option value="clean" />
+                <option value="-Dcom.it_academy.test.api.*" />
+                <option value="test" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -114,17 +131,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatalogCategoryAsideTitlesTest.verifyExactAsideTitlesOfCatalogCategorySectionExist" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CatalogCategoryAsideTitlesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.CatalogCategoryAsideTitlesTest" />
-      <option name="METHOD_NAME" value="verifyExactAsideTitlesOfCatalogCategorySectionExist" />
+      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.CatalogCategoryAsideTitlesTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlinerCatalogSushiveslaTest.verifyFilteredSushiveslaProducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.api.OnlinerCatalogSushiveslaTest" />
+      <option name="METHOD_NAME" value="verifyFilteredSushiveslaProducts" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,12 +170,12 @@
       <module name="MyFirstSeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.ProductDetailsTest" />
+      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.ProductDetailsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -151,41 +185,15 @@
     </configuration>
     <configuration name="SearchFrameExitTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
+          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.onliner.SearchFrameExitTest" />
-      <option name="GROUP_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.SearchFrameExitTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.it_academy.test.onliner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.onliner" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -193,20 +201,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.MyFirstSeleniumProject [clean]" />
+      <item itemvalue="Maven.MyFirstSeleniumProject [clean...]" />
       <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/suite.xml" />
-      <item itemvalue="TestNG.CatalogCategoryAsideTitlesTest.verifyExactAsideTitlesOfCatalogCategorySectionExist" />
-      <item itemvalue="TestNG.com.it_academy.test.onliner" />
       <item itemvalue="TestNG.ProductDetailsTest" />
       <item itemvalue="TestNG.SearchFrameExitTest" />
+      <item itemvalue="TestNG.CatalogCategoryAsideTitlesTest" />
+      <item itemvalue="TestNG.OnlinerCatalogSushiveslaTest.verifyFilteredSushiveslaProducts" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/suite.xml" />
-        <item itemvalue="TestNG.SearchFrameExitTest" />
-        <item itemvalue="TestNG.com.it_academy.test.onliner" />
-        <item itemvalue="TestNG.CatalogCategoryAsideTitlesTest.verifyExactAsideTitlesOfCatalogCategorySectionExist" />
         <item itemvalue="TestNG.ProductDetailsTest" />
+        <item itemvalue="TestNG.CatalogCategoryAsideTitlesTest" />
+        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/suite.xml" />
+        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTest.verifyFilteredSushiveslaProducts" />
+        <item itemvalue="TestNG.SearchFrameExitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -243,5 +251,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Onliner POM and tests added" />
     <option name="LAST_COMMIT_MESSAGE" value="Onliner POM and tests added" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SelenideProject$CatalogCategorySectionTest.ic" NAME="CatalogCategorySectionTest Coverage Results" MODIFIED="1684138200100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.it_academy.test.web.onliner.*</FILTER>
+    </SUITE>
   </component>
 </project>
