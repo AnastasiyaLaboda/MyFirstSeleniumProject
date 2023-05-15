@@ -1,6 +1,7 @@
 package com.it_academy.onliner.framework;
 
 import com.codeborne.selenide.WebDriverProvider;
+import com.it_academy.onliner.framework.driver_creator.Driver;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 
