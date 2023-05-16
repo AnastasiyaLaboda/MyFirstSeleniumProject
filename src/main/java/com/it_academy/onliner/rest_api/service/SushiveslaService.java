@@ -2,6 +2,7 @@ package com.it_academy.onliner.rest_api.service;
 
 import com.google.common.collect.ImmutableMap;
 import com.it_academy.onliner.rest_api.entity.SushiveslaProduct;
+import io.qameta.allure.Step;
 
 import java.util.List;
 import java.util.Map;
@@ -10,14 +11,18 @@ import static com.it_academy.onliner.rest_api.endpoints.OnlinerEndpoints.getCata
 import static com.it_academy.onliner.rest_api.utils.GetRequestUtils.makeRequestAndGetResponseBody;
 
 public class SushiveslaService {
+
+    @Step("Get Sushivesla Products list")
     public List<SushiveslaProduct> getSushiveslaProducts() {
         return makeRequestAndGetResponseBody(getCatalogSushiveslaEndpoint(), configureHeaders(), null)
                 .jsonPath()
                 .getList("products", SushiveslaProduct.class);
     }
 
-    public List<String> getSushiveslaFilteredValues(String fieldName) {
-        return makeRequestAndGetResponseBody(getCatalogSushiveslaEndpoint(), configureHeaders(), configureParams())
+    @Step("Get filtered {filterKey} by {selectedFilter} Sushivesla Products {fieldName}")
+    public List<String> getSushiveslaFilteredValues(String fieldName, String filterKey, String selectedFilter) {
+        return makeRequestAndGetResponseBody(
+                getCatalogSushiveslaEndpoint(), configureHeaders(), configureParams(filterKey, selectedFilter))
                 .jsonPath()
                 .getList("products." + fieldName);
     }
@@ -26,14 +31,7 @@ public class SushiveslaService {
         return ImmutableMap.of("Host", "www.onliner.by");
     }
 
-    public Map<String, Object> configureParams() {
-        return ImmutableMap.of("sushi_typ", "roll");
+    public Map<String, Object> configureParams(String filterKey, String selectedFilter) {
+        return ImmutableMap.of(filterKey, selectedFilter);
     }
 }
-
-/*    sushi_typ roll
-    sushi_typ set
-    sushi_typ salads
-    sushi_typ desert
-    sushi_typ souce
-    sushi_typ garnier*/
