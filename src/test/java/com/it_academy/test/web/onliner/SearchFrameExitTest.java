@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.open;
 
 public class SearchFrameExitTest extends BaseTest {
-
     private SearchPage searchPage;
 
     @BeforeClass
@@ -30,4 +29,3 @@ public class SearchFrameExitTest extends BaseTest {
                 .verifySearchFrameIsNotDisplayed();
     }
 }
-

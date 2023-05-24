@@ -2,19 +2,17 @@ package com.it_academy.test.web.onliner;
 
 import com.it_academy.onliner.constants.OnlinerUrls;
 import com.it_academy.onliner.pageobject.onliner.HomePage;
-
 import com.it_academy.test.web.BaseTest;
 import io.qameta.allure.Description;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.CollectionCondition.*;
+import static com.codeborne.selenide.CollectionCondition.containExactTextsCaseSensitive;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CatalogCategorySectionTest extends BaseTest {
     private HomePage homePage;
     private static final String MAIN_SECTION_TITLE = "Каталог";
-
     private static final String[] CATALOG_CATEGORY_SECTION_NAMES = {"Электроника", "Компьютеры и сети", "Бытовая техника",
             "На каждый день", "Стройка и ремонт", "Дом и сад", "Авто и мото", "Красота и спорт", "Детям и мамам"};
 

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Testing Api Suite">
+    <test name="Onliner API-tests" parallel="tests" thread-count="2">
+        <classes>
+            <class name="com.it_academy.test.api.OnlinerCatalogSushiveslaProductsTest"/>
+            <class name="com.it_academy.test.api.OnlinerCatalogSushiveslaTypeFilterTest"/>
+        </classes>
+    </test>
+</suite>
