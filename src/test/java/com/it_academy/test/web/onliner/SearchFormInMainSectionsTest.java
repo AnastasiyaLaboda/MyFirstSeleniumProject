@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.open;
 
 public class SearchFormInMainSectionsTest extends BaseTest {
-
     private SearchPage searchPage;
 
     @BeforeClass

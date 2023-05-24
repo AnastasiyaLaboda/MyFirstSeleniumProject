@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="api tests added, selenium grid loaded">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/api/ApiDataProviderClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/api/OnlinerCatalogSushiveslaTypeFilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/parallRunSuite.xml" afterDir="false" />
+    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="code refactoring, parallSuit added">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test_suites/testingApiSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test_suites/testingWebSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/rest_api/service/SushiveslaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/rest_api/service/SushiveslaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/api/OnlinerCatalogSushiveslaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/api/OnlinerCatalogSushiveslaProductsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sesources/endpoints.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategoryAsideTitlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategoryAsideTitlesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategorySectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategorySectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchFormInMainSectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchFormInMainSectionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchFrameExitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchFrameExitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchableSectionsInFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/SearchableSectionsInFrameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/parallRunSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test_suites/parallRunSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test_suites/testingAllSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -58,10 +61,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anduser\IdeaProjects\SelenideProject\src\test\resources\test_suites" />
       <recent name="C:\Users\anduser\IdeaProjects\SelenideProject\src\test\resources" />
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anduser\IdeaProjects\SelenideProject\src\test\resources\test_suites" />
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\test\resources" />
       <recent name="C:\Users\anduser\IdeaProjects\MyFirstSeleniumProject\src\main\resources" />
     </key>
@@ -70,8 +75,8 @@
       <recent name="com.it_academy.test.onliner" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/parallRunSuite.xml">
-    <configuration name="MyFirstSeleniumProject [clean...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.api_tests [clean, run]">
+    <configuration name="SelenideProject [clean,test...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -83,8 +88,8 @@
             <option name="goals">
               <list>
                 <option value="clean" />
-                <option value="-Dcom.it_academy.test.api.*" />
                 <option value="test" />
+                <option value="-Dsurefire.suiteXmlFiles=src/test/resources/test_suites/testingWebSuite.xml" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -98,9 +103,63 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/parallRunSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/parallRunSuite.xml" />
+    <configuration name="api_tests [clean, run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="-Dsurefire.suiteXmlFiles=src/test/resources/test_suites/testingApiSuite.xml" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="web_tests [clean, run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="-Dsurefire.suiteXmlFiles=src/test/resources/test_suites/testingWebSuite.xml" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingApiSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenideProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test_suites/testingApiSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -108,52 +167,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainSectionsOnHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenideProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.MainSectionsOnHomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OnlinerCatalogSushiveslaProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
+      <module name="SelenideProject" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.it_academy.test.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
       <option name="MAIN_CLASS_NAME" value="com.it_academy.test.api.OnlinerCatalogSushiveslaProductsTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OnlinerCatalogSushiveslaTypeFilterTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
+    <configuration name="SearchableSectionsInFrameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenideProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it_academy.test.api.*" />
+          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.api.OnlinerCatalogSushiveslaTypeFilterTest" />
+      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.SearchableSectionsInFrameTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaProducts2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.api.OnlinerCatalogSushiveslaTypeFilterTest" />
-      <option name="METHOD_NAME" value="verifyFilteredSushiveslaProducts2" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -161,15 +229,24 @@
       </method>
     </configuration>
     <configuration name="com.it_academy.test.api" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
+      <module name="SelenideProject" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.it_academy.test.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -177,20 +254,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.MyFirstSeleniumProject [clean...]" />
-      <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/parallRunSuite.xml" />
+      <item itemvalue="Maven.web_tests [clean, run]" />
+      <item itemvalue="Maven.SelenideProject [clean,test...]" />
+      <item itemvalue="Maven.api_tests [clean, run]" />
+      <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingApiSuite.xml" />
+      <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
+      <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
       <item itemvalue="TestNG.OnlinerCatalogSushiveslaProductsTest" />
-      <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest" />
-      <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaProducts2" />
       <item itemvalue="TestNG.com.it_academy.test.api" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/parallRunSuite.xml" />
-        <item itemvalue="TestNG.com.it_academy.test.api" />
-        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest" />
         <item itemvalue="TestNG.OnlinerCatalogSushiveslaProductsTest" />
-        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaProducts2" />
+        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingApiSuite.xml" />
+        <item itemvalue="TestNG.com.it_academy.test.api" />
+        <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
+        <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684143093208</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="code refactoring, parallSuit added">
+      <created>1684236859627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684236859627</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +320,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Onliner POM and tests added" />
     <MESSAGE value="api tests added, selenium grid loaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="api tests added, selenium grid loaded" />
+    <MESSAGE value="code refactoring, parallSuit added" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring, parallSuit added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SelenideProject$CatalogCategorySectionTest.ic" NAME="CatalogCategorySectionTest Coverage Results" MODIFIED="1684138200100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

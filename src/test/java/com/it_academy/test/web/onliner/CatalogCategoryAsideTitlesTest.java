@@ -23,7 +23,7 @@ public class CatalogCategoryAsideTitlesTest extends BaseTest {
     public void init() {
         homePage = new HomePage();
         open(OnlinerUrls.HOME.getUrl());
-      }
+    }
 
     @Test
     @Description("Verify that exact aside titles exist")

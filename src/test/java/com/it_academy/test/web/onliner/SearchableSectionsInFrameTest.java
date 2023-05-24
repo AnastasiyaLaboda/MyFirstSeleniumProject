@@ -11,7 +11,6 @@ import static com.codeborne.selenide.CollectionCondition.containExactTextsCaseSe
 import static com.codeborne.selenide.Selenide.open;
 
 public class SearchableSectionsInFrameTest extends BaseTest {
-
     private SearchPage searchPage;
     private static final String[] SEARCHABLE_SECTIONS_NAMES = {"в каталоге", "в новостях", "на барахолке", "на форуме"};
 
@@ -20,7 +19,7 @@ public class SearchableSectionsInFrameTest extends BaseTest {
     public void init() {
         searchPage = new SearchPage();
         open(OnlinerUrls.HOME.getUrl());
-   }
+    }
 
     @Test
     @Description("Verify exact searchable sections in search frame is exist")
@@ -32,4 +31,3 @@ public class SearchableSectionsInFrameTest extends BaseTest {
                 .should(containExactTextsCaseSensitive(SEARCHABLE_SECTIONS_NAMES));
     }
 }
-
