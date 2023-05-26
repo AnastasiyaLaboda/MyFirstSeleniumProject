@@ -32,10 +32,10 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>src/test/resources/test_suites/suiteUI.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>src/test/resources/test_suites/suiteAPI.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
+                    <!--                    <suiteXmlFiles>-->
+                    <!--                        <suiteXmlFile>src/test/resources/test_suites/suiteUI.xml</suiteXmlFile>-->
+                    <!--                        <suiteXmlFile>src/test/resources/test_suites/suiteAPI.xml</suiteXmlFile>-->
+                    <!--                    </suiteXmlFiles>-->
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -160,5 +160,4 @@
         </dependency>
 
     </dependencies>
-
 </project>

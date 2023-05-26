@@ -14,7 +14,6 @@ public class CatalogCategoryAsideTitlesTest extends BaseTest {
     private HomePage homePage;
     private static final String MAIN_SECTION_TITLE = "Каталог";
     private static final String CATALOG_CATEGORY = "Компьютеры";
-
     private static final String[] ASIDE_TITLES_NAMES = {"Ноутбуки, компьютеры, мониторы", "Комплектующие",
             "Техника для печати и дизайна", "Хранение данных", "Электропитание"};
 
