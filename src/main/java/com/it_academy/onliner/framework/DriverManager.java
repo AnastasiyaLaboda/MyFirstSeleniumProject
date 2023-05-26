@@ -8,7 +8,7 @@ import static com.it_academy.onliner.constants.WaitTimeouts.IMPLICIT_WAIT;
 
 public class DriverManager {
 
-    public static void initDriver() {
+    public synchronized static void initDriver() {
         Configuration.browser = DriverProvider.class.getName();
         Configuration.pageLoadTimeout = IMPLICIT_WAIT;
         open();

@@ -1,5 +1,6 @@
 package com.it_academy.test.web.onliner;
 
+import com.codeborne.selenide.CollectionCondition;
 import com.it_academy.onliner.constants.OnlinerUrls;
 import com.it_academy.onliner.pageobject.onliner.HomePage;
 
