@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="logs and testing suits added, code refactoring">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test_suites/testingGridSuite.xml" afterDir="false" />
+    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="code refactoring, testing_grid_suite added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/constants/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/ChromeDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/ChromeDriverCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/EdgeDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/EdgeDriverCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/FirefoxDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/FirefoxDriverCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/RemoteDriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it_academy/onliner/framework/driver_creator/RemoteDriverCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategoryAsideTitlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/CatalogCategoryAsideTitlesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/ProductDetailsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/browsers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/browsers/geckodriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/browsers/msedgedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/selenium-server-4.9.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/browsers/selenium-server-4.9.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test_suites/parallRunSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test_suites/parallRunSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +68,7 @@
       <recent name="com.it_academy.test.onliner" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.grid_test[clean test]">
+  <component name="RunManager" selected="Maven.api_tests [clean, run]">
     <configuration name="api_tests [clean, run]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -167,16 +152,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingGridSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SelenideProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test_suites/testingGridSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainSectionsOnHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SelenideProject" />
       <shortenClasspath name="NONE" />
@@ -204,6 +179,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OnlinerCatalogSushiveslaTypeFilterTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenideProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.api.OnlinerCatalogSushiveslaTypeFilterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaTypeFieldName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenideProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it_academy.test.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
+      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.api.OnlinerCatalogSushiveslaTypeFilterTest" />
+      <option name="METHOD_NAME" value="verifyFilteredSushiveslaTypeFieldName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SelenideProject" />
       <extension name="coverage">
@@ -215,24 +225,6 @@
       <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
       <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.ProductDetailsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductDetailsTest.checkEachProductHasOwnDetailedInformation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SelenideProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.ProductDetailsTest" />
-      <option name="METHOD_NAME" value="checkEachProductHasOwnDetailedInformation" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -260,19 +252,19 @@
       <item itemvalue="Maven.web_tests [clean, run]" />
       <item itemvalue="Maven.api_tests [clean, run]" />
       <item itemvalue="Maven.grid_test[clean test]" />
-      <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingGridSuite.xml" />
+      <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest" />
+      <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaTypeFieldName" />
       <item itemvalue="TestNG.ProductDetailsTest" />
-      <item itemvalue="TestNG.ProductDetailsTest.checkEachProductHasOwnDetailedInformation" />
       <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
       <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaTypeFieldName" />
+        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest" />
         <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
         <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
         <item itemvalue="TestNG.ProductDetailsTest" />
-        <item itemvalue="TestNG.ProductDetailsTest.checkEachProductHasOwnDetailedInformation" />
-        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingGridSuite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684936625000</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="code refactoring, testing_grid_suite added">
+      <created>1685115275039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685115275039</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,7 +331,8 @@
     <MESSAGE value="api tests added, selenium grid loaded" />
     <MESSAGE value="code refactoring, parallSuit added" />
     <MESSAGE value="logs and testing suits added, code refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="logs and testing suits added, code refactoring" />
+    <MESSAGE value="code refactoring, testing_grid_suite added" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring, testing_grid_suite added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SelenideProject$CatalogCategorySectionTest.ic" NAME="CatalogCategorySectionTest Coverage Results" MODIFIED="1684138200100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -3,7 +3,6 @@ package com.it_academy.test.web;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.it_academy.onliner.constants.Config;
 import com.it_academy.onliner.framework.DriverManager;
-import com.it_academy.onliner.framework.driver_creator.RemoteDriverCreator;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +14,7 @@ import org.testng.annotations.Parameters;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
-    private static final Logger LOG = LoggerFactory.getLogger(RemoteDriverCreator.class);
+    private static final Logger LOG = LoggerFactory.getLogger(BaseTest.class);
 
     @BeforeClass
     @Parameters(value = {"browser"})
