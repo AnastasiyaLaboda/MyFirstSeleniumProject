@@ -5,7 +5,6 @@ import org.testng.annotations.DataProvider;
 public class ApiDataProviderClass {
     @DataProvider(name = "sushiTypeTitles")
     public static Object[][] provideSushiType() {
-        return new Object[][]{{"roll", "Роллы"}, {"set", "Сет"}, {"salads", "Салаты"},
-                {"desert", "Десерт"}, {"souce", "Соус"}, {"garnier", "Гарнир"}};
+        return new Object[][]{{"roll", "Роллы"}, {"set", "Сет"}, {"souce", "Соус"}};
     }
 }

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="code refactoring, testing_grid_suite added">
+    <list default="true" id="efe00b95-3898-4d98-97b4-a7602d2dfaab" name="Changes" comment="code refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it_academy/test/web/onliner/ProductDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_suites/testingGridSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test_suites/testingGridSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites",
+    "last_opened_file_path": "C:/Users/anduser/IdeaProjects/SelenideProject",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -68,7 +68,7 @@
       <recent name="com.it_academy.test.onliner" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.api_tests [clean, run]">
+  <component name="RunManager" selected="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingAllSuite.xml">
     <configuration name="api_tests [clean, run]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -152,6 +152,16 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingAllSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenideProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test_suites/testingAllSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainSectionsOnHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SelenideProject" />
       <shortenClasspath name="NONE" />
@@ -214,34 +224,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="com.it_academy.test.api" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SelenideProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
+          <option name="PATTERN" value="com.it_academy.test.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.ProductDetailsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchableSectionsInFrameTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SelenideProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it_academy.test.web.onliner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it_academy.test.web.onliner" />
-      <option name="MAIN_CLASS_NAME" value="com.it_academy.test.web.onliner.SearchableSectionsInFrameTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="com.it_academy.test.api" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -252,19 +244,19 @@
       <item itemvalue="Maven.web_tests [clean, run]" />
       <item itemvalue="Maven.api_tests [clean, run]" />
       <item itemvalue="Maven.grid_test[clean test]" />
+      <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingAllSuite.xml" />
       <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest" />
       <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaTypeFieldName" />
-      <item itemvalue="TestNG.ProductDetailsTest" />
+      <item itemvalue="TestNG.com.it_academy.test.api" />
       <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
-      <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaTypeFieldName" />
+        <item itemvalue="TestNG.C:/Users/anduser/IdeaProjects/SelenideProject/src/test/resources/test_suites/testingAllSuite.xml" />
+        <item itemvalue="TestNG.com.it_academy.test.api" />
         <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest" />
         <item itemvalue="TestNG.MainSectionsOnHomePageTest" />
-        <item itemvalue="TestNG.SearchableSectionsInFrameTest" />
-        <item itemvalue="TestNG.ProductDetailsTest" />
+        <item itemvalue="TestNG.OnlinerCatalogSushiveslaTypeFilterTest.verifyFilteredSushiveslaTypeFieldName" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685115275039</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="code refactoring">
+      <created>1685266014258</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685266014258</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,7 +331,8 @@
     <MESSAGE value="code refactoring, parallSuit added" />
     <MESSAGE value="logs and testing suits added, code refactoring" />
     <MESSAGE value="code refactoring, testing_grid_suite added" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactoring, testing_grid_suite added" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SelenideProject$CatalogCategorySectionTest.ic" NAME="CatalogCategorySectionTest Coverage Results" MODIFIED="1684138200100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
